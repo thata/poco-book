@@ -1,3 +1,5 @@
+`timescale 1ns/1ps
+
 module adder_test;
     parameter STEP = 10;
     reg ina, inb;
@@ -7,6 +9,8 @@ module adder_test;
 
     initial begin
         $display("*** adder_test ***");
+        $dumpfile("adder.vcd");
+        $dumpvars(0, adder_1);
 
         ina <= 1'b0;
         inb <= 1'b0;
