@@ -2,7 +2,7 @@
 
 `include "def.h"
 
-module alu_test;
+module datapath_test;
     parameter STEP = 10;
 
     reg [15:0] ina, inb;
